@@ -29,7 +29,7 @@ int main(){
 					printf("Tien thue phai tra la %d VND",y);
 				}else{
 					if(x>11000000){
-						y=x*0.05;
+						y=(x-11000000)*0.05;
 						printf("Tien thue phai tra la %d VND",y);
 					}else{
 						printf("Khong phai nop thue");
