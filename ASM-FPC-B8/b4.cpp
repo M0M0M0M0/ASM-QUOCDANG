@@ -12,7 +12,7 @@ int main(){
 	int sl;
 	int temp=0;
 	for(int i=0;i<size;i++){
-		if(player[i]%2!=0){
+		if(player[i]%2!=0 && player[i]%2>0){
 			sl=player[i];
 			temp=1;
 		}
