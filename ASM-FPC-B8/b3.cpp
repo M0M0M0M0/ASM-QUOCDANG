@@ -1,27 +1,22 @@
 #include <stdio.h>
 
 int main(){
-	int size;
+	int n;
 	printf("Nhap so luong phan tu cua mang: ");
-	scanf("%d",&size);
-	int player[size];
-	for(int i=0;i<size;i++){
+	scanf("%d",&n);
+	int ar[n];
+	for(int i=0;i<n;i++){
 		printf("Vui long nhap phan tu thu %d vao mang: ",i+1);
-		scanf("%d",&player[i]);
+		scanf("%d",&ar[i]);
 	}
-	int x;
-	int temp=0;
-	printf("Vui long nhap so nguyen x = ");
-	scanf("%d",&x);
-	for(int i=0;i<size;i++){  
-		if(x==player[i]){
-			temp=1;
-			break;
-		}	
+	int min=ar[0],max=ar[0];
+	for(int i=0;i<n;i++){
+		if(ar[i]>max){
+			max=ar[i];
+		}
+		if(ar[i]<min){
+			min=ar[i];
+		}
 	}
-	if(temp==1){
-		printf("Co so %d o trong mang.",x);
-	}else{
-		printf("Khong co so %d o trong mang.",x);
-	}
+	printf("Doan [%d,%d] chua tat ca cac gia tri trong mang.",min,max);
 }
