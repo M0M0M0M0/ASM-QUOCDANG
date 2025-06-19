@@ -45,13 +45,13 @@ int main(){
 		}
 	}
 	if(x<=min){
-		printf("Gia tri trong mang gan x nhat la %d",min);
+		printf("Gia tri trong mang gan %d nhat la %d",x,min);
 	}else if(x>=max){
-		printf("Gia tri trong mang gan x nhat la %d",max);
+		printf("Gia tri trong mang gan %d nhat la %d",x,max);
 	}else if(found==1){ //check thu xem co co gia tri thu 2 khong
-		printf("Cac gia tri gan nhat voi x la %d va %d",first,second);
+		printf("Cac gia tri gan nhat voi %d la %d va %d",x,first,second);
 	}else{
-		printf("Gia tri trong mang gan x nhat la %d",first);
+		printf("Gia tri trong mang gan %d nhat la %d",x,first);
 	}
 	
 }

@@ -22,14 +22,14 @@ int main(){
 	printf("Vui long nhap x = ");
 	scanf("%d",&x);
 	if(x<=min){
-		printf("Gia tri trong mang xa x nhat la %d",max);
+		printf("Gia tri trong mang xa %d nhat la %d",x,max);
 	}else if(x>=max){
-		printf("Gia tri trong mang xa x nhat la %d",min);
+		printf("Gia tri trong mang xa %d nhat la %d",x,min);
 	}else if(max-x>x-min){
-		printf("Gia tri trong mang xa x nhat la %d",max);
+		printf("Gia tri trong mang xa %d nhat la %d",x,max);
 	}else if(max-x==x-min){
-		printf("Cac gia tri trong mang xa x nhat la %d",min,max);
+		printf("Cac gia tri trong mang xa %d nhat la %d va %d",x,min,max);
 	}else {
-		printf("Gia tri trong mang xa x nhat la %d",min);
+		printf("Gia tri trong mang xa %d nhat la %d",x,min);
 	}
 }
