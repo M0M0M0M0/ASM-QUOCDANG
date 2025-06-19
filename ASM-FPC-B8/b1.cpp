@@ -28,8 +28,8 @@ int main(){
 	}else if(max-x>x-min){
 		printf("Gia tri trong mang xa x nhat la %d",max);
 	}else if(max-x==x-min){
-  printf("Cac gia tri trong mang xa x nhat la %d va %d",min,max);
- }else{
+		printf("Cac gia tri trong mang xa x nhat la %d",min,max);
+	}else {
 		printf("Gia tri trong mang xa x nhat la %d",min);
 	}
 }
