@@ -1,22 +1,17 @@
-//tim max cua mang n so nguyen
-int maxArray(int array[],int n){
-	int max=array[0];
-		for(int i=0;i<n;i++){
-		if(array[i]>max){
-			max=array[i];
+//uoc chung lon nhat
+int ucln(int a,int b){
+	int uoc;
+	for(int i=1;i<=a&&i<=b;i++){
+		if(a%i==0&&b%i==0){
+			uoc=i;
 		}
 	}
-	return max;
+	return uoc;
 }
-//tim min cua mang n so nguyen
-int minArray(int array[],int n){
-	int min=array[0];
-	for(int i=0;i<n;i++){
-		if(array[i]<min){
-			min=array[i];
-		}
-	}
-	return min;
+//boi chung nho nhat
+int bcnn(int a,int b){
+	int uc = ucln(a,b);
+	int bcnn = a*b/uc;
 }
 //tich cua a va b
 int tich(int a,int b){
