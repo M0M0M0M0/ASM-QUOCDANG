@@ -13,9 +13,12 @@ int bcnn(int a,int b){
 	int uc = ucln(a,b);
 	int bcnn = a*b/uc;
 }
-//tich cua a va b
+//x mu y
 int tich(int a,int b){
-	int c = a*b;
+	int c=1;
+	for(int i=0;i<b;i++){
+		c *= a;
+	}
 	return c;
 }
 //tong cac chu so cua so nguyen n
