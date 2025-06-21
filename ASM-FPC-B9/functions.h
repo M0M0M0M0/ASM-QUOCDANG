@@ -14,7 +14,7 @@ int bcnn(int a,int b){
 	int bcnn = a*b/uc;
 }
 //x mu y
-int tich(int a,int b){
+int luythua(int a,int b){
 	int c=1;
 	for(int i=0;i<b;i++){
 		c *= a;
