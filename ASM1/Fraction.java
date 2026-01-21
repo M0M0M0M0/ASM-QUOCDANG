@@ -91,43 +91,30 @@ public class Fraction {
     }
 
     //cong tru nhan chia
-    public Fraction add(Fraction other) {
-        int tuSoMoi;
-        int mauSoMoi;
-        tuSoMoi = this.tuSo * other.mauSo + other.tuSo * this.mauSo;
-        mauSoMoi = this.mauSo * other.mauSo;
-        Fraction temp = new Fraction(tuSoMoi, mauSoMoi);
-        temp.rutGonFraction();
-        return temp;
+    public void add(Fraction other) {
+        this.tuSo = this.tuSo * other.mauSo + other.tuSo * this.mauSo;
+        this.mauSo = this.mauSo * other.mauSo;
+        rutGonFraction();
     }
 
-    public Fraction subtract(Fraction other) {
-        int tuSoMoi;
-        int mauSoMoi;
-        tuSoMoi = this.tuSo * other.mauSo - other.tuSo * this.mauSo;
-        mauSoMoi = this.mauSo * other.mauSo;
-        Fraction temp = new Fraction(tuSoMoi, mauSoMoi);
-        temp.rutGonFraction();
-        return temp;
+    public void subtract(Fraction other) {
+        this.tuSo = this.tuSo * other.mauSo - other.tuSo * this.mauSo;
+        this.mauSo = this.mauSo * other.mauSo;
+        rutGonFraction();
     }
 
-    public Fraction multiply(Fraction other) {
-        int tuSoMoi;
-        int mauSoMoi;
-        tuSoMoi = this.tuSo * other.tuSo;
-        mauSoMoi = this.mauSo * other.mauSo;
-        Fraction temp = new Fraction(tuSoMoi, mauSoMoi);
-        temp.rutGonFraction();
-        return temp;
+    public void multiply(Fraction other) {
+        this.tuSo = this.tuSo * other.tuSo;
+        this.mauSo = this.mauSo * other.mauSo;
+        rutGonFraction();
     }
 
-    public Fraction divine(Fraction other) {
-        int tuSoMoi;
-        int mauSoMoi;
-        tuSoMoi = this.tuSo * other.mauSo;
-        mauSoMoi = this.mauSo * other.tuSo;
-        Fraction temp = new Fraction(tuSoMoi, mauSoMoi);
-        temp.rutGonFraction();
-        return temp;
+    public void divine(Fraction other) {
+        if (other.tuSo == 0) {
+            System.out.println("Khong the chia phan so.");
+        }
+        this.tuSo = this.tuSo * other.mauSo;
+        this.mauSo = this.mauSo * other.tuSo;
+        rutGonFraction();
     }
 }
