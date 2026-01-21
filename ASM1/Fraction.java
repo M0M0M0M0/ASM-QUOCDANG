@@ -1,9 +1,9 @@
 package main.session2;
 
 public class Fraction {
-    int tuSo;
-    int mauSo;
-    boolean daNhap = false;
+    private int tuSo;
+    private int mauSo;
+    private boolean daNhap = false;
 
     public Fraction() {
 
@@ -16,18 +16,26 @@ public class Fraction {
         nhapFraction(x, y);
     }
 
-    public void nhapTu(int a) {
+    public Integer getTu() {
+        return this.tuSo;
+    }
+
+    public void setTu(int a) {
         this.tuSo = a;
     }
 
-    public void nhapMau(int b) {
+    public Integer getMau() {
+        return this.mauSo;
+    }
+
+    public void setMau(int b) {
         if (b != 0) this.mauSo = b;
         else System.out.println("Mau so can khac 0.");
     }
 
     public void nhapFraction(int a, int b) {
-        nhapTu(a);
-        nhapMau(b);
+        setTu(a);
+        setMau(b);
     }
 
     //print
